@@ -63,6 +63,10 @@ La aplicación está desplegada como en `**GitHub Pages**`, utilizando el build 
 🔗 **URL del despliegue:**  
 https://apm-code.github.io/Actividad02_DWEC_ProductosAPI/
 
+```text
+Consejo: clicar (desactivar y activar) en "Solo activos" de la sección de filtrado para que carguen los productos.
+```
+
 ---
 
 ## Estructura del proyecto
