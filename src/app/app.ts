@@ -4,10 +4,11 @@ import { Component, signal } from '@angular/core';
 import { ProductService, Product } from './services/product';
 import { ProductList } from './components/product-list/product-list';
 import { ProductsFormComponent } from './components/products-form/products-form';
+import { ProductFilterComponent } from './components/product-filter/product-filter';
 
 @Component({
   selector: 'app-root',
-  imports: [ProductList, ProductsFormComponent],
+  imports: [ProductList, ProductsFormComponent, ProductFilterComponent, ProductList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
