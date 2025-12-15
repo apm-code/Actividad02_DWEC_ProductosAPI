@@ -1,59 +1,86 @@
-# GestionProductos
+# Gestión de Productos – Angular 18
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+Aplicación web desarrollada con **Angular 18** como parte de la **Actividad 02 de Desarrollo Web en Entorno Cliente (DWEC)**.
 
-## Development server
+La aplicación permite **listar, filtrar, crear y eliminar productos** consumiendo una API REST simulada, utilizando componentes standalone, formularios reactivos y template-driven forms, y un servicio centralizado para la gestión del estado.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## Funcionalidades
+
+- **Listado de productos**
+  - Visualización en tarjetas con imagen, descripción, precio, categoría y estado.
+  - Diseño responsive con Bootstrap.
+
+- **Alta de productos**
+  - Formulario reactivo (Reactive Forms).
+  - Los productos se añaden dinámicamente al listado (en memoria).
+
+- **Eliminación de productos**
+  - Eliminación directa desde la tarjeta del producto.
+
+- **Filtrado de productos**
+  - Filtro por nombre.
+  - Filtro por categoría.
+  - Filtro por productos activos.
+
+- **Interfaz cuidada**
+  - Bootstrap 5.
+  - Estilo pastel con predominio de tonos naranjas.
+  - Hover suave en tarjetas y navegación.
+
+---
+
+## Tecnologías utilizadas
+
+- **Angular 18**
+  - Componentes standalone
+  - Servicios
+  - Signals
+- **TypeScript**
+- **Bootstrap 5**
+- **RxJS**
+  - `BehaviorSubject` para gestión del estado
+- **HttpClient**
+- **API REST simulada** (npoint)
+
+---
+
+## API utilizada
+
+Los datos iniciales se cargan desde una API REST simulada:
+https://api.npoint.io/1dee63ad8437c82b24fe
+
+- La API se utiliza únicamente para la carga inicial (GET).  
+- Las operaciones de alta, eliminación y filtrado se realizan en **memoria**, tal y como se especifica en la guía de la actividad.
+
+---
+
+## Estructura del proyecto
+```text
+src
+├── app
+│   ├── components
+│   │   ├── product-list
+│   │   ├── products-card
+│   │   ├── products-form
+│   │   └── product-filter
+│   │
+│   ├── services
+│   │   └── product.ts
+│   │
+│   ├── app.html
+│   ├── app.css
+│   ├── app.ts
+│   └── app.config.ts
+│
+├── index.html
+├── main.ts
+└── styles.css
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Autor
 
-## Code scaffolding
+Adrián Ignacio Pérez Martos
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Actividad 02 DWEC. UNIR
