@@ -81,6 +81,6 @@ src
 
 ## Autor
 
-Adrián Ignacio Pérez Martos
+***Adrián Ignacio Pérez Martos***
 
-Actividad 02 DWEC. UNIR
+*Actividad 02 DWEC. UNIR*
