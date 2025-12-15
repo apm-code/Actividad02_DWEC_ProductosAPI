@@ -1,0 +1,11 @@
+.nav-badge{
+  background-color: #ffffff;
+  color: #7a3a10;
+  border: 1px solid rgba(0,0,0,.08);
+  transition: background-color .2s ease, transform .15s ease;
+}
+
+.nav-badge:hover{
+  background-color: #ffe1cf;
+  transform: translateY(-1px);
+}

@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --brand: #ff8a3d;
+  --brand-soft: #ffd7c2;
+  --bg: #fff7f1;
+  --card: #ffffff;
+  --text: #2b2b2b;
+  --muted: #6c757d;
+  --border: rgba(0,0,0,.08);
+  --shadow: 0 10px 30px rgba(0,0,0,.07);
+  --radius: 16px;
+}
+
+html, body { height: 100%; }
+
+body{
+  background-color: #fff7f1;
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(255, 138, 61, .18), transparent 55%),
+    radial-gradient(circle at 90% 20%, rgba(255, 220, 190, .55), transparent 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container{
+  max-width: 1100px;
+}
+
+.card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary{
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+.btn-primary:hover{
+  filter: brightness(.95);
+}
+
+.btn-outline-danger{
+  border-radius: 12px;
+}
+
+.badge{
+  border-radius: 999px;
+}
+
+.form-control, .form-select{
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.form-control:focus, .form-select:focus{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 .2rem rgba(255,138,61,.2);
+}
+
+.app-header{
+  background: linear-gradient(90deg, rgba(255, 225, 207, .85), rgba(255, 243, 214, .85));
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
