@@ -56,6 +56,15 @@ https://api.npoint.io/1dee63ad8437c82b24fe
 
 ---
 
+## Despliegue en **GitHub Pages**
+
+La aplicación está desplegada como en `**GitHub Pages**`, utilizando el build de producción de Angular.
+
+🔗 **URL del despliegue:**  
+https://apm-code.github.io/Actividad02_DWEC_ProductosAPI/
+
+---
+
 ## Estructura del proyecto
 ```text
 src
@@ -78,6 +87,57 @@ src
 ├── main.ts
 └── styles.css
 ```
+
+---
+
+## Proceso de creación del proyecto Angular y ejecución en local
+El proyecto se crea en la raíz del repositorio deseada en modo standalone:
+```bash
+ng new gestion-productos --standalone --skip-tests --directory .
+```
+
+Ha de ejecutarse, en la consola, el siguiente comando:
+```bash
+ng serve -o
+```
+Abriéndose la aplicación en la dirección:
+```
+http://localhost:4200/
+```
+
+A continuación, se instala Bootstrap 5 en el proyecto:
+```bash
+npm install bootstrap@5
+```
+Los componentes y servicios se generan con los siguientes comandos:
+```bash
+ng g c components/product-list --standalone --skip-tests
+ng g c components/products-card --standalone --skip-tests
+ng g c components/products-form --standalone --skip-tests
+ng g c components/product-filter --standalone --skip-tests
+ng g s services/product --skip-tests
+```
+---
+
+## Ejecutar el proyecto en local
+Si se desea clonar el repositorio y ejecutarlo en local, el proceso es el siguiente:
+
+1. Clonar el repositorio:
+```bash
+git clone git@github.com:apm-code/Actividad02_DWEC_ProductosAPI.git
+
+cd Actividad02_DWEC_ProductosAPI
+```
+2. Instalar dependencias:
+```bash
+npm install
+```
+3. Ejecutar en local:
+```bash
+ng serve -o
+```
+
+---
 
 ## Autor
 
